@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mutiplicacao">
+
+    <ImageView
+        android:id="@+id/cabecalho_mutiplicacao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/retangulo"
+        style="@style/barra_superior" />
+
+
+    <TextView
+        android:id="@+id/text_mutiplicacao"
+        style="@style/text_barra_superior"
+        android:text="MUTIPLICAÇÃO"
+        app:layout_constraintBottom_toBottomOf="@+id/cabecalho_mutiplicacao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.461" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_igual_mutiplicacao"
+        android:text="="
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cabecalho_mutiplicacao"
+        app:layout_constraintVertical_bias="0.372"
+        style="@style/igualdade" />
+
+    <EditText
+        android:id="@+id/sn_mutiplicação"
+        style="@style/edit_numeros"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/numeros"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pn_mutiplicação"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/pn_mutiplicação"
+        style="@style/edit_numeros"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/numeros"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cabecalho_mutiplicacao" />
+
+    <ImageButton
+        android:id="@+id/ret_resposta_multiplicacao"
+        style="@style/espaço_resultado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cabecalho_mutiplicacao"
+        app:layout_constraintVertical_bias="0.873"
+        app:srcCompat="@drawable/resultado" />
+
+    <TextView
+        android:id="@+id/resultado_text_mutiplicacao"
+        android:text="Resultado...."
+        app:layout_constraintBottom_toBottomOf="@+id/ret_resposta_multiplicacao"
+        app:layout_constraintEnd_toEndOf="@+id/ret_resposta_multiplicacao"
+        app:layout_constraintStart_toStartOf="@+id/ret_resposta_multiplicacao"
+        app:layout_constraintTop_toTopOf="@+id/ret_resposta_multiplicacao"
+        app:layout_constraintVertical_bias="0.074"
+        style="@style/text_resultado" />
+
+    <ImageView
+        android:id="@+id/retorno_mutiplicacao"
+        style="@style/retorno"
+        app:layout_constraintBottom_toBottomOf="@+id/cabecalho_mutiplicacao"
+        app:layout_constraintEnd_toEndOf="@+id/cabecalho_mutiplicacao"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cabecalho_mutiplicacao"
+        app:layout_constraintVertical_bias="0.533"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
