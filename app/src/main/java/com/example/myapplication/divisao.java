@@ -54,6 +54,7 @@ public class divisao extends AppCompatActivity {
 
         float resultado = (float) primeiro_numero / segundo_numero;
 
+
         text_resultado_divisao.setText(String.format("%.2f", resultado));
     }
 }
